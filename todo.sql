@@ -14,3 +14,5 @@ INSERT INTO todolistdb (title, details, priority, created_at, completed_at) VALU
 INSERT INTO todolistdb (title, details, priority, created_at, completed_at) VALUES todos ('Blog', 'Finish Monday blog entry', 4, now(), );
 
 SELECT * FROM todos WHERE completed_at IS NULL;
+
+SELECT * FROM todos WHERE priority > 1;
