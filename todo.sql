@@ -17,7 +17,9 @@ SELECT * FROM todos WHERE completed_at IS NULL;
 
 SELECT * FROM todos WHERE priority > 1;
 
-UPDATE todos SET 
+UPDATE todos SET
+
+DELETE * todos WHERE completed_at IS NOT NULL;
 
 
 
