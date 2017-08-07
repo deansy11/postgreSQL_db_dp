@@ -12,3 +12,5 @@ INSERT INTO todolistdb (title, details, priority, created_at, completed_at) VALU
 INSERT INTO todolistdb (title, details, priority, created_at, completed_at) VALUES todos ('Fold clothes', 'Fold and organize clean clothes', 5, now(), );
 INSERT INTO todolistdb (title, details, priority, created_at, completed_at) VALUES todos ('Concert Tickets', 'Purchase tickets for upcoming shows', 3, now(), );
 INSERT INTO todolistdb (title, details, priority, created_at, completed_at) VALUES todos ('Blog', 'Finish Monday blog entry', 4, now(), );
+
+SELECT * FROM todos WHERE completed_at IS NULL;
