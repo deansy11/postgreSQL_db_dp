@@ -17,11 +17,6 @@ SELECT * FROM todos WHERE completed_at IS NULL;
 
 SELECT * FROM todos WHERE priority > 1;
 
-UPDATE todos SET
+UPDATE todos SET completed_at = now() WHERE id = 4;
 
 DELETE * todos WHERE completed_at IS NOT NULL;
-
-
-
-Write an UPDATE statement to complete one todo by its id. Your ids may differ, so you will choose the id to up.
-Write a DELETE statement to delete all completed todos.
