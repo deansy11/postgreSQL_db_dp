@@ -19,4 +19,4 @@ SELECT * FROM todos WHERE priority > 1;
 
 UPDATE todos SET completed_at = now() WHERE id = 4;
 
-DELETE * todos WHERE completed_at IS NOT NULL;
+DELETE FROM todos WHERE completed_at IS NOT NULL;
