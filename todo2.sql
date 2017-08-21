@@ -26,7 +26,8 @@ SELECT COUNT(completed_at IS NULL) FROM todos WHERE priority = 3;
 
 SELECT COUNT(*)
 FROM todos
-WHERE priority = 1 AND created_at > NOW()::date - 30;
+WHERE created_at > NOW()::date - 30
+GROUP BY priority;
 
 SELECT title, details, priority, created_at FROM todos
 WHERE priority = 1
