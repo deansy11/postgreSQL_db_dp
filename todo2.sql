@@ -31,4 +31,4 @@ WHERE priority = 1 AND created_at > NOW()::date - 30;
 SELECT title, details, priority, created_at FROM todos
 WHERE priority = 1
 AND created_at =
-  (SELECT MAX(created_at);
+  (MAX(created_at);
