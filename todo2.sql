@@ -32,4 +32,4 @@ GROUP BY priority;
 SELECT title, details, priority, created_at FROM todos
 WHERE completed_at IS NULL
 ORDER BY priority, created_at
-LIMIT 1
+LIMIT 1;
