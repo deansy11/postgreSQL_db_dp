@@ -22,7 +22,11 @@ INSERT INTO todos (title, details, priority, created_at, completed_at)
 
 SELECT * FROM todos WHERE priority = 3;
 
-SELECT COUNT(completed_at IS NULL) FROM todos GROUP BY priority;
+SELECT priority, COUNT(*)
+FROM todos
+WHERE completed_at IS NULL
+ORDER BY priority
+GROUP BY priority;
 
 SELECT COUNT(*)
 FROM todos
