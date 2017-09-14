@@ -30,6 +30,6 @@ WHERE created_at > NOW()::date - 30
 GROUP BY priority;
 
 SELECT title, details, priority, created_at FROM todos
-WHERE priority = 1
-AND created_at =
-  (MAX(created_at);
+WHERE completed_at IS NULL
+ORDER BY priority, created_at
+LIMIT 1
